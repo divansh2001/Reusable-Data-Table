@@ -1,0 +1,195 @@
+:root {
+  --bg-light: #f5f7fa;
+  --bg-card: #ffffff;
+  --border-light: #e2e5e9;
+  --border-medium: #d0d4d9;
+  --text-dark: #1a1a1a;
+  --muted: #6b7280;
+  --primary: #3f51b5;
+  --primary-light: #e8eaf6;
+  --radius: 8px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --transition: 0.15s ease;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-light);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  color: var(--text-dark);
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+p {
+  margin-top: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dt-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 12px;
+}
+
+.dt-search {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-medium);
+  min-width: 260px;
+}
+
+.dt-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dt-filter,
+.dt-toolbar button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  background: var(--primary-light);
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 13px;
+}
+.dt-filter:hover,
+.dt-toolbar button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.column-section {
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  margin-bottom: 12px;
+}
+.column-section strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.column-section label {
+  margin-right: 12px;
+}
+.column-section > div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-box {
+  background: var(--bg-card);
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  margin-bottom: 10px;
+}
+.filter-box strong {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+.filter-box small {
+  color: var(--muted);
+}
+.filter-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+.filter-row select,
+.filter-row input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border-medium);
+}
+.filter-box .tip {
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dt-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.dt-table th,
+.dt-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 14px;
+}
+.dt-table th {
+  background: #fafafa;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+.dt-table tr:hover td {
+  background: #f7f8fb;
+}
+.row-highlight {
+  background: #eef3ff !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eef;
+  color: #003;
+  font-size: 12px;
+}
+
+.pagination-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+}
+.pagination-bar button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-medium);
+  background: white;
+  cursor: pointer;
+}
+.pagination-child {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.dt-empty {
+  padding: 30px;
+  text-align: center;
+  color: var(--muted);
+  min-height: 130px;
+}

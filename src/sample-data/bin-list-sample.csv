@@ -1,0 +1,11 @@
+bin,scheme,type,brand,country,bank
+45717360,visa,debit,Visa Bank,United States,Chase
+40240071,visa,credit,Visa Card,United Kingdom,Barclays
+448527,visa,credit,Alpha Bank,Germany,Deutsche Bank
+510510,mastercard,credit,MC Bank,France,SocGen
+520082,mastercard,debit,MC Debit,India,HDFC
+601100,discover,credit,Discover,United States,Capital One
+356600,JCB,credit,JCB Bank,Japan,Mizuho
+530000,mastercard,credit,MS Bank,India,ICICI
+340000,amex,credit,Amex,United States,Amex Bank
+300000,diners,credit,Diners Club,United Kingdom,Diners Bank
