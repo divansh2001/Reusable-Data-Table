@@ -17,6 +17,8 @@ This project implements a reusable Data Table component with features required b
 1. Install dependencies: `yarn` or `npm install`
 2. Dev: `yarn dev` or `npm run dev`
 3. Open: http://localhost:5173
+4. Deployed in: https://reusable-data-table.netlify.app/
+
 
 ## Notes
 - The app uses a bundled sample CSV for offline demo. To fetch the CSV from the GitHub repo, update `App.tsx` and use the raw file URL.
